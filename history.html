@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css.css">
+
+    <title>Parking History</title>
+</head>
+
+<body>
+    <div class="history-box">
+        <img class="icon" src="./Icon.jpg">
+
+        <h2>Parking History</h2>
+
+        <table id="historyTable">
+
+            <thead>
+                <tr>
+                    <th>Plate</th>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Entry</th>
+                    <th>Exit</th>
+                    <th>Duration</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+
+            <tbody id="historyBody">
+            </tbody>
+
+        </table>
+
+        <h3 id="totalRevenue">
+            Total Revenue: AU$0.00
+        </h3>
+
+        <button class="checkButton" id="downloadPDF">
+            Download PDF
+        </button>
+
+        <button class="checkButton" onclick="window.location.href='index.html'">
+            Back
+        </button>
+
+    </div>
+
+    <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- AutoTable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="./history.js"></script>
+
+</body>
+
+</html>

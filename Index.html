@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css.css">
+    <title>Parking Management System</title>
+</head>
+
+<body>
+
+
+
+    <div class="input-box">
+        
+        <img class="icon" src="./Icon.jpg">
+
+        <h2>Plate Check</h2>
+
+        <form id="plateForm">
+
+            <div class="user-box">
+                <input type="text" id="plate" required>
+                <label>Plate</label>
+            </div>
+
+            <button type="submit" class="checkButton">
+                Check
+            </button>
+
+        </form>
+
+
+        <!-- Vehicle Registration -->
+        <div id="entryForm" style="display: none;">
+
+            <h2>Vehicle Registration</h2>
+
+            <div class="user-box">
+                <input type="text" id="name">
+                <label>Name</label>
+            </div>
+
+            <div class="user-box">
+                <input type="text" id="contact">
+                <label>Contact</label>
+            </div>
+
+            <button type="button" class="checkButton" id="registerButton">
+                Register Entry
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
